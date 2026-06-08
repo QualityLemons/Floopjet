@@ -1,0 +1,28 @@
+{
+  "name": "floop-feedback-tools",
+  "version": "1.0.0",
+  "description": "Lightweight feedback tools for young people and adults",
+  "scripts": {
+    "build": "vite build",
+    "test": "jest",
+    "test:unit": "JEST_SKIP_SERVER=true jest --testPathPattern=tests/unit",
+    "test:e2e": "jest --testPathPattern=tests/e2e",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "autoprefixer": "^10.5.0",
+    "jest": "^29.7.0",
+    "jest-environment-node": "^29.7.0",
+    "jshint": "^2.13.6",
+    "postcss": "^8.5.14",
+    "tailwindcss": "^3.4.19"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "cheerio": "^1.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^8.0.13"
+  }
+}
