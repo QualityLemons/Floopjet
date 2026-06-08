@@ -1,0 +1,82 @@
+/* ==========================================
+   FEEDBACK SANDBOX: GLOBAL STYLES
+   Project code written for this application.
+   Author: John E. Parman
+   No external CSS has been copied into this file.
+   Tailwind utility classes used in HTML are resolved at build time
+   by Vite + PostCSS (see vite.config.js); they are not present here.
+   ========================================== */
+
+:root {
+  --primary: #4f46e5;
+  --primary-color: #4f46e5;
+  --accent: #2563eb;
+  --bg-subtle: #f8fafc;
+  --bg-color: #f9fafb;
+  --bg: #f3f4f6;
+  --text-color: #111827;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --border-color: #d1d5db;
+  --card-bg: #ffffff;
+}
+
+/* 1. Global Smoothing */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04";
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--bg);
+  color: var(--text-main);
+  line-height: 1.5;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* 2. Mobile Protection */
+/* Prevents the 'pull-to-refresh' gesture on touch devices while drawing */
+.touch-none {
+  touch-action: none;
+  overscroll-behavior: contain;
+}
+
+/* 3. Custom Slate Scrollbars (Cleaner than default browser bars) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* slate-300 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; /* slate-400 */
+}
+
+/* 4. Interactive Feedback Tool states */
+.tool-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-2px);
+}
+
+/* 5. Natural Cursors for Feedback Tools */
+.cursor-draw {
+  cursor: crosshair;
+}
+
+.cursor-pointer-hover button:hover {
+  cursor: pointer;
+}
