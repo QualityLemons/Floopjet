@@ -1,0 +1,43 @@
+/* ==========================================
+   WIREFRAME PAGE STYLES
+   Project code written for this application.
+   Author: John E. Parman
+   Styles the grid-paper background and placeholder
+   box elements used in wireframe.html only.
+   No external CSS has been copied into this file.
+   ========================================== */
+
+body {
+    background-color: #f0f4f8;
+    background-image:
+        linear-gradient(rgba(99,102,241,0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99,102,241,0.07) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+.wf-box {
+    background: #e2e8f0;
+    border-radius: 2px;
+}
+.wf-line {
+    background: #cbd5e1;
+    border-radius: 1px;
+}
+.wf-img {
+    background: repeating-linear-gradient(
+        45deg,
+        #cbd5e1,
+        #cbd5e1 2px,
+        #e2e8f0 2px,
+        #e2e8f0 10px
+    );
+    border-radius: 2px;
+}
+.card:hover .wf-label {
+    color: #4f46e5;
+}
+.annotation {
+    font-family: 'Courier New', monospace;
+    font-size: 9px;
+    color: #94a3b8;
+    letter-spacing: 0.05em;
+}
