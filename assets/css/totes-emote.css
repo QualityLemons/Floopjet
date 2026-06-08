@@ -1,0 +1,12 @@
+/* ==========================================
+   TOTES EMOTE PAGE STYLES
+   Project code written for this application.
+   Author: John E. Parman
+   Page-specific styles for TotesEmote.html only.
+   No external CSS has been copied into this file.
+   ========================================== */
+
+/* Prevents pull-to-refresh on mobile while drawing on the canvas */
+body {
+    overscroll-behavior-y: contain;
+}
